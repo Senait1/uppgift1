@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="scr/JS/main.js" defer> </script>
+    <title>Todo or not todo?</title>
+  </head>
+  <body>
+   <!-- <div id="app"></div>-->
+   <div class="container">   
+    <h1>Min Todo-lista</h1>
+    <div class="todo-container">
+      <ul id="todoList">
+        <!--toggle control av switchar mellan på eller av(mellan 2 stadier) -->
+        <li onclick="toggleTodo(this)">Gör uppgift</li> 
+        <li onclick="toggleTodo(this)">Gör uppgift2</li> 
+        <!-- Lägg till fler todos här -->
+      </ul>
+
+    <!-- </ul> -->
+      <!--formulär för att lägga till todos-->
+      <form id="todoForm">
+        <input type="text" id="newTodo" placeholder="Lägg till ny uppgift">
+        <button type="button" id="addTodoBtn">Lägg till</button>
+      </form> 
+     </div>
+    <!-- Klara uppgifter-->
+    <!-- <div class="completed-container">-->
+    <h1>Slutförda uppgifter</h1>
+    <ul id="completedList">
+      <li> klar</li>
+   
+    </ul>
+   <!-- </div>-->
+ </div>
+  </body>
+</html>
